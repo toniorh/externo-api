@@ -31,6 +31,6 @@ module.exports.listar = async (event) => {
       mensaje: ErrorConstants.ERROR_API_STARWARS_PLANETA.MENSAJE,
       error: (error.message ? error.message : error),
     };
-    return result;
+    return result; 
   }
 };
