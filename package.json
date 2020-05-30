@@ -1,0 +1,33 @@
+{
+  "name": "aerh-api-canal-starwars",
+  "version": "1.0.0",
+  "description": "API canal para integración de API STAR WARS",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.686.0",
+    "axios": "^0.19.2",
+    "serverless-offline": "^6.3.0",
+    "uuidv4": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/sls offline start -r us-east-1 --noTimeout",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toniorh/externo-api.git"
+  },
+  "keywords": [
+    "api",
+    "canal",
+    "starwars"
+  ],
+  "author": "Antonio E. Rojas Herencia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toniorh/externo-api/issues"
+  },
+  "homepage": "https://github.com/toniorh/externo-api#readme"
+}
