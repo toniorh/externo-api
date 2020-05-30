@@ -1,4 +1,5 @@
 'use strict';
+const AWS = require('aws-sdk');
 const AppSchema = require('../commons/AppSchema');
 const GeneralErrorConstants = require('../commons/ErrorConstants');
 const Validator = require('./util/Validator');
@@ -14,6 +15,21 @@ module.exports.crearIncursion = async (event) => {
 
     const result = await IncursionService.crear(request); 
     return AppSchema.responseFormat(result);
+  } catch (error) {
+    console.error(error);
+    result = {
+      estado: GeneralErrorConstants.ERROR_CONTROLLER.CODIGO,
+      mensaje: GeneralErrorConstants.ERROR_CONTROLLER.MENSAJE,
+      error: (error.message ? error.message : error),
+    };
+    return AppSchema.responseFormat(result);
+  }
+};
+
+module.exports.listarIncursion = async (event) => {
+  try {
+    const result = await IncursionService.listar(); 
+    return await AppSchema.responseFormat(result);
   } catch (error) {
     console.error(error);
     result = {
