@@ -6,7 +6,7 @@
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "aws-sdk": "^2.686.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "serverless-offline": "^6.3.0",
     "uuidv4": "^6.1.0"
   },
