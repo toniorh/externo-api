@@ -7,7 +7,7 @@
     "@hapi/joi": "^17.1.1",
     "aws-sdk": "^2.686.0",
     "axios": "^0.19.2",
-    "serverless-offline": "^6.3.0",
+    "serverless-offline": "^12.0.4",
     "uuidv4": "^6.1.0"
   },
   "devDependencies": {},
